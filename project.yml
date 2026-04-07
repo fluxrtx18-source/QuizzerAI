@@ -1,0 +1,96 @@
+name: QuizzerAI
+options:
+  bundleIdPrefix: com.quizzerai
+  deploymentTarget:
+    iOS: "26.0"
+  xcodeVersion: "16.2"
+  generateEmptyDirectories: true
+  defaultConfig: Debug
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+    TARGETED_DEVICE_FAMILY: "1"       # iPhone only
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    PRODUCT_BUNDLE_IDENTIFIER: com.quizzerai
+    SWIFT_STRICT_CONCURRENCY: complete
+    ENABLE_PREVIEWS: YES
+    ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    INFOPLIST_FILE: QuizzerAI/Resources/Info.plist
+    DEVELOPMENT_TEAM: "RS8JSBN29A"              # ← REQUIRED: set your 10-character Apple Developer Team ID
+                                       # Find it at developer.apple.com → Membership, or in
+                                       # Xcode → Signing & Capabilities → Team dropdown
+
+configs:
+  Debug: debug
+  Release: release
+
+targets:
+  QuizzerAI:
+    type: application
+    platform: iOS
+    deploymentTarget: "26.0"
+
+    sources:
+      - path: QuizzerAI
+        excludes:
+          - "**/.DS_Store"
+
+    resources:
+      - path: QuizzerAI/Resources/Assets.xcassets
+      - path: QuizzerAI/Resources/Info.plist
+
+    info:
+      path: QuizzerAI/Resources/Info.plist
+      properties:
+        ITSAppUsesNonExemptEncryption: false
+        NSCameraUsageDescription: "QuizzerAI uses your camera to scan textbook pages and handwritten notes into flashcards."
+        NSPhotoLibraryUsageDescription: "QuizzerAI accesses your photo library to import images as flashcards."
+        BGTaskSchedulerPermittedIdentifiers:
+          - com.quizzerai.process-flashcards
+        UIBackgroundModes:
+          - processing
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+
+    settings:
+      base:
+        PRODUCT_NAME: QuizzerAI
+        PRODUCT_BUNDLE_IDENTIFIER: com.quizzerai
+        SWIFT_VERSION: "6.0"
+        IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+
+    dependencies:
+      # All Apple first-party — no SPM packages needed
+      - framework: VisionKit.framework
+        embed: false
+      - framework: FoundationModels.framework
+        embed: false
+      - framework: BackgroundTasks.framework
+        embed: false
+      - framework: SwiftData.framework
+        embed: false
+
+  QuizzerAITests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "26.0"
+
+    sources:
+      - path: QuizzerAITests
+
+    resources:
+      - path: QuizzerAITests/StoreKitConfig.storekit
+
+    settings:
+      base:
+        PRODUCT_NAME: QuizzerAITests
+        PRODUCT_BUNDLE_IDENTIFIER: com.quizzerai.tests
+        SWIFT_VERSION: "6.0"
+        IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+
+    dependencies:
+      - target: QuizzerAI

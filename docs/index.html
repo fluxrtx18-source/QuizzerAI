@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizzerAI — Scan Pages, Get Flashcards</title>
+  <meta name="description" content="QuizzerAI turns textbook pages and handwritten notes into study-ready flashcards using on-device AI. Private, fast, no cloud.">
+  <style>
+    :root {
+      --brand: #8552F2;
+      --brand-light: #f3eefe;
+      --bg: #FAFAFA;
+      --card: #FFFFFF;
+      --text: #1A1A2E;
+      --muted: #7A7A8E;
+      --border: #E8E8EE;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111117;
+        --card: #1C1C26;
+        --text: #F0F0F5;
+        --muted: #8E8E9E;
+        --border: #2A2A36;
+        --brand-light: #1e1530;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 680px; margin: 0 auto; padding: 60px 24px; }
+    .hero { text-align: center; padding: 80px 0 60px; }
+    .hero-icon {
+      width: 80px; height: 80px; border-radius: 20px;
+      background: var(--brand); display: inline-flex;
+      align-items: center; justify-content: center;
+      font-size: 36px; font-weight: 900; color: white;
+      margin-bottom: 24px;
+    }
+    h1 { font-size: 36px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 12px; }
+    h1 span { color: var(--brand); }
+    .subtitle { font-size: 18px; color: var(--muted); max-width: 480px; margin: 0 auto; }
+    .features {
+      display: grid; gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin: 40px 0;
+    }
+    .feature {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 24px;
+    }
+    .feature-icon { font-size: 28px; margin-bottom: 12px; }
+    .feature h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+    .feature p { font-size: 14px; color: var(--muted); }
+    .links {
+      text-align: center; padding: 40px 0;
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+    }
+    .links a {
+      color: var(--muted); text-decoration: none; font-size: 14px;
+      margin: 0 12px;
+    }
+    .links a:hover { color: var(--brand); }
+    .badge {
+      display: inline-block; margin-top: 24px;
+    }
+    .badge img { height: 44px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <div class="hero-icon">Q</div>
+      <h1>Study smarter with <span>QuizzerAI</span></h1>
+      <p class="subtitle">Scan any textbook page or handwritten notes. Get study-ready flashcards in seconds — all processed on-device, completely private.</p>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">📸</div>
+        <h3>Scan Anything</h3>
+        <p>Point your camera at textbook pages, lecture slides, or handwritten notes. QuizzerAI extracts the key concepts automatically.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🧠</div>
+        <h3>On-Device AI</h3>
+        <p>All processing happens on your iPhone using Apple Intelligence. Your study materials never leave your device.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>Instant Flashcards</h3>
+        <p>AI-generated question-and-answer flashcards ready for review. Swipe to accept, rescan, or edit.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔒</div>
+        <h3>Completely Private</h3>
+        <p>No cloud, no accounts, no tracking. Your data stays on your device — period.</p>
+      </div>
+    </div>
+
+    <div class="links">
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Use</a>
+      <a href="/faq">FAQ</a>
+      <a href="mailto:support@quizzerai.app">Contact</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+{
+  "identifier" : "StoreKitConfig",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInReviewEnabled" : false,
+    "_billingGracePeriodEnabled" : false,
+    "_billingRetryEnabled" : true,
+    "_customPriceConsentsEnabled" : false,
+    "_failTransactionsEnabled" : false,
+    "_interruptedPurchasesEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Settings"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refresh Receipt"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Support App Store"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "quizzerai-pro",
+      "localizations" : [
+
+      ],
+      "name" : "QuizzerAI Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "49.99",
+          "familySharable" : false,
+          "groupNumber" : 1,
+          "internalID" : "com.quizzerai.pro.yearly",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlimited flashcard scans, on-device AI, and private study — billed annually.",
+              "displayName" : "Unlimited Yearly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.quizzerai.pro.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Pro Yearly",
+          "subscriptionGroupID" : "quizzerai-pro",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "4.99",
+          "familySharable" : false,
+          "groupNumber" : 2,
+          "internalID" : "com.quizzerai.pro.weekly",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlimited flashcard scans, on-device AI, and private study — billed weekly.",
+              "displayName" : "Unlimited Weekly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.quizzerai.pro.weekly",
+          "recurringSubscriptionPeriod" : "P1W",
+          "referenceName" : "Pro Weekly",
+          "subscriptionGroupID" : "quizzerai-pro",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

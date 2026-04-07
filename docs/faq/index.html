@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — QuizzerAI</title>
+  <meta name="description" content="Frequently asked questions about QuizzerAI — the on-device AI flashcard app.">
+  <style>
+    :root {
+      --brand: #8552F2;
+      --bg: #FAFAFA;
+      --card: #FFFFFF;
+      --text: #1A1A2E;
+      --muted: #7A7A8E;
+      --border: #E8E8EE;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111117;
+        --card: #1C1C26;
+        --text: #F0F0F5;
+        --muted: #8E8E9E;
+        --border: #2A2A36;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      background: var(--bg); color: var(--text);
+      line-height: 1.7; -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 680px; margin: 0 auto; padding: 60px 24px; }
+    .back { display: inline-block; color: var(--brand); text-decoration: none; font-size: 14px; font-weight: 600; margin-bottom: 32px; }
+    .back:hover { text-decoration: underline; }
+    h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
+    .subtitle { font-size: 16px; color: var(--muted); margin-bottom: 40px; }
+    .faq-item {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 24px; margin-bottom: 16px;
+    }
+    .faq-item h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+    .faq-item p { font-size: 15px; color: var(--muted); margin-bottom: 0; }
+    .faq-item p + p { margin-top: 8px; }
+    .section-title { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--brand); margin: 36px 0 16px; }
+    .footer {
+      border-top: 1px solid var(--border); margin-top: 48px;
+      padding-top: 24px; text-align: center;
+    }
+    .footer a { color: var(--muted); text-decoration: none; font-size: 14px; margin: 0 12px; }
+    .footer a:hover { color: var(--brand); }
+    a { color: var(--brand); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back">&larr; QuizzerAI</a>
+    <h1>Frequently Asked Questions</h1>
+    <p class="subtitle">Everything you need to know about QuizzerAI.</p>
+
+    <div class="section-title">Getting Started</div>
+
+    <div class="faq-item">
+      <h3>What is QuizzerAI?</h3>
+      <p>QuizzerAI is an iOS app that turns textbook pages, lecture slides, and handwritten notes into study-ready flashcards using on-device AI. Just scan a page with your camera, and QuizzerAI generates question-and-answer flashcards automatically.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What devices does QuizzerAI support?</h3>
+      <p>QuizzerAI requires an iPhone running iOS 26 or later with Apple Intelligence support. The app uses Apple's on-device Foundation Models, which require Apple Intelligence-capable hardware.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is QuizzerAI free?</h3>
+      <p>Yes! You get 20 free AI-generated flashcards with no time limit and no credit card required. After that, you can upgrade to QuizzerAI Pro for unlimited flashcard creation.</p>
+    </div>
+
+    <div class="section-title">Privacy & Data</div>
+
+    <div class="faq-item">
+      <h3>Does QuizzerAI upload my photos or data?</h3>
+      <p>No. All scanning, text recognition, and AI flashcard generation happens entirely on your device. No images, text, or study data ever leaves your iPhone. QuizzerAI has zero network calls to any external server.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does QuizzerAI track me?</h3>
+      <p>No. QuizzerAI contains no analytics SDKs, no advertising frameworks, and no tracking of any kind. We don't even know how many people use the app.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Do I need to create an account?</h3>
+      <p>No. QuizzerAI works without any account or sign-in. Your data is stored locally on your device and protected by your device's security features.</p>
+    </div>
+
+    <div class="section-title">Subscription</div>
+
+    <div class="faq-item">
+      <h3>What does QuizzerAI Pro include?</h3>
+      <p>QuizzerAI Pro unlocks unlimited AI flashcard creation from scanned pages. All other features (organizing decks, cram mode, swipe review) are available to all users.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I cancel my subscription?</h3>
+      <p>You can cancel anytime through your iPhone's Settings &gt; Apple ID &gt; Subscriptions &gt; QuizzerAI. Your Pro access continues until the end of your current billing period. You can also manage subscriptions directly in the <a href="https://apps.apple.com/account/subscriptions">App Store</a>.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I get a refund?</h3>
+      <p>Subscriptions are billed through Apple. To request a refund, visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> or contact Apple Support.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I restore my purchase on a new device?</h3>
+      <p>Open QuizzerAI, go to the paywall or Profile tab, and tap "Restore Purchases." Make sure you're signed in with the same Apple ID used for the original purchase.</p>
+    </div>
+
+    <div class="section-title">Using the App</div>
+
+    <div class="faq-item">
+      <h3>What can I scan?</h3>
+      <p>QuizzerAI works with printed textbook pages, typed lecture slides, handwritten notes, and any other readable text. For best results, ensure good lighting and hold your camera steady.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I import photos from my library?</h3>
+      <p>Yes! Instead of using the live camera, you can import existing photos of study materials from your photo library.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is Cram Mode?</h3>
+      <p>Cram Mode lets you study your flashcards with a flip-card interface. Tap to reveal the answer, then mark whether you got it right. The app tracks your accuracy for each study session.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does background processing work?</h3>
+      <p>Yes. If you have pending scans, QuizzerAI can process them in the background when your device is charging. This is handled by iOS automatically and requires no action from you.</p>
+    </div>
+
+    <div class="section-title">Troubleshooting</div>
+
+    <div class="faq-item">
+      <h3>The AI isn't generating flashcards</h3>
+      <p>Make sure Apple Intelligence is enabled on your device (Settings &gt; Apple Intelligence &amp; Siri). The on-device model may need to download before first use. Ensure your device has enough storage available.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>The camera isn't working</h3>
+      <p>Check that you've granted QuizzerAI camera access in Settings &gt; QuizzerAI &gt; Camera. If the permission was denied, you'll need to enable it from Settings.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>I have another question</h3>
+      <p>Contact us at <a href="mailto:support@quizzerai.app">support@quizzerai.app</a> and we'll get back to you as soon as possible.</p>
+    </div>
+
+    <div class="footer">
+      <a href="/">Home</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Use</a>
+      <a href="mailto:support@quizzerai.app">Contact</a>
+    </div>
+  </div>
+</body>
+</html>

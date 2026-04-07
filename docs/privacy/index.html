@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — QuizzerAI</title>
+  <meta name="description" content="QuizzerAI Privacy Policy. All data stays on your device. No tracking, no analytics, no data collection.">
+  <style>
+    :root {
+      --brand: #8552F2;
+      --bg: #FAFAFA;
+      --card: #FFFFFF;
+      --text: #1A1A2E;
+      --muted: #7A7A8E;
+      --border: #E8E8EE;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111117;
+        --card: #1C1C26;
+        --text: #F0F0F5;
+        --muted: #8E8E9E;
+        --border: #2A2A36;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      background: var(--bg); color: var(--text);
+      line-height: 1.7; -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 680px; margin: 0 auto; padding: 60px 24px; }
+    .back { display: inline-block; color: var(--brand); text-decoration: none; font-size: 14px; font-weight: 600; margin-bottom: 32px; }
+    .back:hover { text-decoration: underline; }
+    h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
+    .effective { font-size: 14px; color: var(--muted); margin-bottom: 40px; }
+    h2 { font-size: 20px; font-weight: 700; margin: 36px 0 12px; }
+    p, li { font-size: 15px; color: var(--text); margin-bottom: 12px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    .highlight {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 20px; margin: 20px 0;
+    }
+    .highlight p { margin-bottom: 0; }
+    .footer {
+      border-top: 1px solid var(--border); margin-top: 48px;
+      padding-top: 24px; text-align: center;
+    }
+    .footer a { color: var(--muted); text-decoration: none; font-size: 14px; margin: 0 12px; }
+    .footer a:hover { color: var(--brand); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back">&larr; QuizzerAI</a>
+    <h1>Privacy Policy</h1>
+    <p class="effective">Effective date: April 7, 2026</p>
+
+    <div class="highlight">
+      <p><strong>The short version:</strong> QuizzerAI does not collect, store, or transmit any personal data. Everything stays on your device.</p>
+    </div>
+
+    <h2>1. Who We Are</h2>
+    <p>QuizzerAI is developed by Huseyin Ataseven ("we", "us", "our"). This policy describes how QuizzerAI (the "App") handles your information.</p>
+
+    <h2>2. Information We Do NOT Collect</h2>
+    <p>QuizzerAI is designed with privacy at its core. We do not collect, process, or transmit:</p>
+    <ul>
+      <li>Personal information (name, email, phone number)</li>
+      <li>Usage analytics or behavioral data</li>
+      <li>Device identifiers or advertising IDs</li>
+      <li>Location data</li>
+      <li>Photos, scans, or any content you create in the App</li>
+      <li>Search queries or study history</li>
+    </ul>
+
+    <h2>3. On-Device Processing</h2>
+    <p>All of QuizzerAI's core features operate entirely on your device:</p>
+    <ul>
+      <li><strong>Camera scanning:</strong> Images captured by the camera are processed locally using Apple's Vision framework for text recognition (OCR). Scanned images are stored only in the App's local database on your device.</li>
+      <li><strong>AI flashcard generation:</strong> Flashcards are created using Apple's on-device Foundation Models (Apple Intelligence). No text or images are sent to any server, including ours.</li>
+      <li><strong>Study data:</strong> Your classes, decks, flashcards, and study progress are stored locally using Apple's SwiftData framework. This data is never uploaded anywhere.</li>
+    </ul>
+
+    <h2>4. Camera and Photo Library Access</h2>
+    <p>QuizzerAI requests access to:</p>
+    <ul>
+      <li><strong>Camera:</strong> To scan textbook pages and handwritten notes into flashcards. Camera access is used only when you actively initiate a scan.</li>
+      <li><strong>Photo Library:</strong> To import existing photos of study materials as flashcards. Photos are read locally and never uploaded.</li>
+    </ul>
+    <p>You can revoke these permissions at any time in your device's Settings app.</p>
+
+    <h2>5. Subscriptions and Payments</h2>
+    <p>QuizzerAI offers optional paid subscriptions ("QuizzerAI Pro") processed entirely through Apple's App Store. We do not collect or have access to your payment information, Apple ID, or billing details. All payment processing is handled by Apple in accordance with their <a href="https://www.apple.com/legal/privacy/" style="color: var(--brand);">privacy policy</a>.</p>
+    <p>A counter tracking how many of the 20 free flashcards you have used is stored locally in your device's Keychain. This is a number only and contains no personal information.</p>
+
+    <h2>6. Third-Party Services</h2>
+    <p>QuizzerAI does not integrate any third-party SDKs, analytics frameworks, advertising networks, or crash reporting tools. The only external communication is between the StoreKit framework and Apple's App Store servers for subscription verification, which is handled by Apple's operating system.</p>
+
+    <h2>7. Data Storage and Security</h2>
+    <p>All App data is stored on your device using:</p>
+    <ul>
+      <li><strong>SwiftData:</strong> For classes, decks, flashcards, and images (on-device SQLite database)</li>
+      <li><strong>Keychain:</strong> For the free card usage counter (encrypted by iOS)</li>
+      <li><strong>UserDefaults:</strong> For appearance preferences and onboarding completion state</li>
+    </ul>
+    <p>Your data is protected by your device's built-in security features, including device encryption and biometric authentication.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>QuizzerAI is not directed at children under 13. We do not knowingly collect personal information from children. Since the App collects no personal data from any user, there is no children's data to address.</p>
+
+    <h2>9. Data Deletion</h2>
+    <p>Since all data is stored locally on your device, you have full control:</p>
+    <ul>
+      <li>Delete individual flashcards, decks, or classes from within the App</li>
+      <li>Delete all App data by uninstalling QuizzerAI from your device</li>
+    </ul>
+    <p>There is no server-side data to request deletion of because no data is ever transmitted off your device.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>If we make material changes to this privacy policy, we will update the "Effective date" above and notify users through an App update. Continued use of the App after changes constitutes acceptance of the revised policy.</p>
+
+    <h2>11. Contact Us</h2>
+    <p>If you have questions about this privacy policy, contact us at:</p>
+    <p><a href="mailto:support@quizzerai.app" style="color: var(--brand);">support@quizzerai.app</a></p>
+
+    <div class="footer">
+      <a href="/">Home</a>
+      <a href="/terms">Terms of Use</a>
+      <a href="/faq">FAQ</a>
+      <a href="mailto:support@quizzerai.app">Contact</a>
+    </div>
+  </div>
+</body>
+</html>

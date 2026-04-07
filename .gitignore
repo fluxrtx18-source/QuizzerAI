@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+*.swp
+*~
+
+# Xcode
+build/
+DerivedData/
+*.xcuserdata
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+
+# Claude Code local settings
+.claude/
