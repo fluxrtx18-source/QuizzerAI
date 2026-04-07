@@ -291,7 +291,7 @@ struct ProfileView: View {
                 iconColor: .green,
                 label: "FAQ"
             ) {
-                if let url = URL(string: "https://quizzerai.app/faq") {
+                if let url = URL(string: "https://fluxrtx18-source.github.io/QuizzerAI/faq") {
                     openURL(url)
                 }
             }
@@ -317,7 +317,7 @@ struct ProfileView: View {
                 iconColor: .blue,
                 label: "Terms of Use"
             ) {
-                if let url = URL(string: "https://quizzerai.app/terms") {
+                if let url = URL(string: "https://fluxrtx18-source.github.io/QuizzerAI/terms") {
                     openURL(url)
                 }
             }
@@ -329,7 +329,7 @@ struct ProfileView: View {
                 iconColor: Color(red: 0.345, green: 0.337, blue: 0.839),
                 label: "Privacy Policy"
             ) {
-                if let url = URL(string: "https://quizzerai.app/privacy") {
+                if let url = URL(string: "https://fluxrtx18-source.github.io/QuizzerAI/privacy") {
                     openURL(url)
                 }
             }

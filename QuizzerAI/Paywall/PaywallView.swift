@@ -329,9 +329,9 @@ struct PaywallView: View {
             }
 
             HStack(spacing: 4) {
-                Link("Terms of Use", destination: URL(string: "https://quizzerai.app/terms")!)
+                Link("Terms of Use", destination: URL(string: "https://fluxrtx18-source.github.io/QuizzerAI/terms")!)
                 Text("·")
-                Link("Privacy Policy", destination: URL(string: "https://quizzerai.app/privacy")!)
+                Link("Privacy Policy", destination: URL(string: "https://fluxrtx18-source.github.io/QuizzerAI/privacy")!)
             }
             .font(.system(size: 11))
             .foregroundStyle(AppColor.textMuted)
